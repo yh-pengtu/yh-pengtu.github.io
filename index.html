@@ -71,7 +71,45 @@
 	</table>
 
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="dirnet_stop()" onmouseover="dirnet_start()">
+            <td style="padding:20px;width:33%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dirnet_image'>
+		<img src='images/TRIAL_vis.png' width=240></div>
+		<img src='images/TRIAL_vis.png' width=240></div>
+              <script type="text/javascript">
+                function dirnet_start() {
+                  document.getElementById('dirnet_image').style.opacity = "1";
+                }
 
+                function dirnet_stop() {
+                  document.getElementById('dirnet_image').style.opacity = "0";
+                }
+                dirnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:67%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2301.06719"><papertitle>Triplet ROI Alignment: Reducing False Positives for Generic Object Detection
+</papertitle></a>
+              <br>
+	      <strong>Peng Tu</strong>,
+              <a>Yawen Huang</a>,
+              <a>Huimin Huang</a>,
+	      <a href="https://scholar.google.com/citations?user=vAIECxgAAAAJ&hl=zh-CN">Yefeng Zheng</a>            
+	      <br>
+        <em>arxiv, in processing</em>, 2023
+              <br>
+              <p>
+		Region-based deep neural networks have shown outstanding performances for object detection. 
+		These detectors typically consist of separate branches for classification and localization with shared features and multi-task loss functions, resulting in cumulative errors and thus affecting detection power. 
+		In this paper, we present a novel approach, Triplet ROI Alignment (TRIAL), which addresses the issue of false positive boxes in object detection. False positives, as the key factor, usually bring unfavorable impact causing degraded performances. The proposed TRIAL deals with this problem by directly suppressing the feature activation in these regions with three key procedures: 1) re-matching predictions into positive and negative boxes; 2) constructing triplet embeddings; 3) comparing positive and negative pairs in each triplet to guide detectors in generating more accurate and discriminative local visual features. 
+		TRIAL is user-friendly and can be integrated with any efficient and two-stage detectors, including YOLOX, YOLOF, and FasterRCNN. 
+		Extensive experiments demonstrate that TRIAL can significantly improve the mean average precision (mAP) of detectors by approximately 4$\%$ on the challenging COCO benchmark with reduced false positive samples. 
+	      </p>
+            </td>
+          </tr>
+		
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="dirnet_stop()" onmouseover="dirnet_start()">
             <td style="padding:20px;width:33%;vertical-align:middle">
               <div class="one">
@@ -114,8 +152,6 @@
             </td>
           </tr>
 		
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <tr onmouseout="dirnet_stop()" onmouseover="dirnet_start()">
